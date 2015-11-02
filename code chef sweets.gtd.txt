@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+using namespace std;
+int A[150];
+int main(){
+	int T,N,X,sum;
+	scanf("%d",&T);
+	for(int t=0;t<T;t++){
+		scanf("%d %d",&N,&X);
+		sum=0;
+		for(int i=0;i<N;i++){
+			scanf("%d",&A[i]);
+			sum+=A[i];
+		}
+		bool R=true;
+		for(int i=0;i<N && R;i++)
+			if(A[i]<=sum%X)
+				R=false;
+		if(R)printf("%d\n",sum/X);
+		else printf("%d\n",-1);
+	}
+}

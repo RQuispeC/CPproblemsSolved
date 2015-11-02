@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+#define MAX 1125
+using namespace std;
+typedef long long ll;
+int n, k;
+int memo[MAX][15];
+vi prime;
+int dp(int pos, int rem)
+{
+	
+}
+void precalc()
+{
+	prime.clear();
+	for(int i=2;i<=MAX;i++)
+		if(isPrime(i))
+			prime.push_back(i);
+}
+int main()
+{
+	precalc();
+	while(scanf("%d %d", &n, &k)==2)
+	{
+		if(n<=0 && k<=0) break;
+	}
+}
+
