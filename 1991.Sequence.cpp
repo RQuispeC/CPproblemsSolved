@@ -59,7 +59,7 @@ int main()
 			}	
 		}
 		if(f)
-			printf("Minimum base = %d.\n", b);
+			printf("Minimum base = %d.\n\n", b);
 		else
 			printf("No base <= 10 can be found.\n");
 		
